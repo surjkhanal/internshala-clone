@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;  
+    list-style: none;
+}
+:root{
+    --color-intern-blue:#008BDC;
+}
+body{
+    font-size:62.5%;
+    font-family: sans-serif;
+    color:#333;
+}
+.highlighted::after{
+    margin-left: 5px;
+    font-weight: 500px;
+    font-size:12px;
+    color: #fff;
+    padding:5px;
+    border-radius: 5px;
+    background-color:orange;
+
+}
+.discount-80::after{
+    content:"80% OFF";
+}
+.extended::after{
+    content: '\25BC';
+    color: #333;
+    margin-left: 5px;
+    font-size: 10px;
+    color:inherit;
+}
+.container{
+    margin: 0 10%;
+}
+/* Header */
+header{
+    padding:5px;
+    box-shadow: 0px 0px 5px 1px rgb(230, 214, 214);
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+}
+
+.header nav{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+}
+.header nav a:hover{
+    color:var(--color-intern-blue);
+}
+.header nav a:hover> .extended::after,.header nav button:hover> .extended::after{
+    content: '\25B2';
+    color:inherit;
+}
+.header nav a{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing:1px;
+}
+.header nav button{
+    border: none;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding:  8px 16px;
+    border-radius:3px;
+}
+.header nav #nav-login{
+    border: 1px solid var(--color-intern-blue);
+    color: var(--color-intern-blue);
+    background-color: #fff;
+}
+.header nav #nav-register{
+    background-color: var(--color-intern-blue);
+    color: #fff;
+}
+
+/* Footers */
+footer {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size:14px;
+}
+
+#footer-links{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+#footer-links h3{
+    font-weight: 500px;
+}
+
+#footer-links li{
+    margin:15px 0;
+    color: #fff;
+    letter-spacing: 1px;
+}
+ 
+
+
+footer #footer-about{
+    border-top: 1px solid rgb(126, 118, 118);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+footer #footer-about #social-links{
+    display:flex;
+    gap: 15px;
+    align-items: center;
+}
+footer #footer-about #social-links #appstore{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius:4px;
+}
+footer #footer-about a{
+    color: #fff;
+}
+footer #footer-about a img{
+    height:24px;
+    fill: rgb(197, 68, 68)!important;
+}
+
+/* main */
+.search-bar {
+    display:flex;
+    margin:25px 0;
+    justify-content: center;
+}
+.search-bar button{
+    border:none;
+    background-color:var(--color-intern-blue);
+    border-radius: 0 5px   5px 0;
+    padding:12px;
+}
+.search-bar img{
+    height: 100%;
+}
+#search:hover{
+    border:2px solid var(--color-intern-blue);
+}
+#search{
+    border-radius: 5px 0 0 5px;
+    border:2px solid #DDD;
+    padding:10px;
+    font-size:16px;
+    color: gray;
+    width:60%;
+    outline: none;
+    width: 350px;
+}
+
+/* section */
+.sec-header{
+    font-size:2.8em;
+}
+.sec-info{
+    display: flex;
+    justify-content: space-between;
+}
+.sec-info>span{
+    font-size:1.8em;
+    letter-spacing: 1px;
+    margin-top: 16px;
+    color: #444;
+}
+.sec-info>a .arrow{
+    font-size:2em;
+    vertical-align:middle;
+}
+.sec-info>a{
+    font-size:1.6em;
+
+    color: var(--color-intern-blue);
+}
+.sec-data{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    justify-content: space-evenly;
+}
+/* .sec-data img{width: 120px;} */
+.sec-data span{
+    font-size: 1.6em;
+    margin-top:10px;
+}
+.sec-data .data-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    word-break: break;
+    overflow: hidden;
+    width:150px;
+    height:150px;
+    padding: 16px 4px;
+    border: 2px solid transparent;
+    text-align: center;
+}
+section{
+    margin: 70px !important;
+}
+.highlight-new::after{
+    content:"NEW";
+    background-color:orangered;
+    padding: 8px;
+    font-size: 18px;
+    letter-spacing:2px;
+    vertical-align: super;
+}
+
+/* section - internshala internship */
+#internsahala-internships .sec-subheading{
+    font-size:1.7em;
+    margin-top: 2em;
+    color:#444;
+}
+/* section - internshala Trainngs */
+.data-box:hover{
+    border: 2px solid rgb(126, 126, 126);
+    border-radius:18px;
+    color: var(--color-intern-blue);
+}
+/* section - freasher Jobs */
