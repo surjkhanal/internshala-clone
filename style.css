@@ -235,7 +235,11 @@ section{
     color:#444;
 }
 /* section - internshala Trainngs */
-.data-box:hover{
+#internsahala-internships
+.data-box:hover,
+#internsahala-trainings
+.data-box:hover
+{
     border: 2px solid rgb(126, 126, 126);
     border-radius:18px;
     color: var(--color-intern-blue);
