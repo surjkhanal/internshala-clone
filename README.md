@@ -1,3 +1,3 @@
 # studious-disco
 
-[go Live][https://github.com/surjkhanal/studious-disco]
+[go Live][https://surjkhanal.github.io/studious-disco]
