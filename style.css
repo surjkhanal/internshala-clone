@@ -250,6 +250,7 @@ section{
 @media screen and (max-width:550px) {
     body {
         font-size: 8px;
+        max-width: 100vw;
     }
     .container{
         margin: 0 10px!important;
@@ -265,6 +266,7 @@ section{
     }
     .search-bar{
         width: 40%;
+        height: 40px;
         margin: 10px auto;
     }
     .sec-header,
@@ -275,19 +277,26 @@ section{
     .sec-info a{
         display:none;
     }
-    .sec-data{
-        overflow-x: auto;
-        overflow-y: visible;
-        display: flex;
-    flex-direction: row;
+    #internsahala-internships .sec-data{
+        /* display: flex;
+        flex-direction: row; */
+        overflow:auto;
+        width:100%;
+        padding:5px;
+        justify-content: flex-start;
     }
-
+    #internsahala-internships .data-box{
+        min-width: fit-content;
+        margin-left: 10px;;
+    }
+    
     #fresher-jobs {
         margin-top: 5em !important;
     }
     #internsahala-trainings 
     .sec-data{
         flex-wrap: wrap;
+
     }
     #fresher-jobs .sec-data{
         flex-direction: column;
