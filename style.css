@@ -223,7 +223,7 @@ section{
     content:"NEW";
     background-color:orangered;
     padding: 8px;
-    font-size: 18px;
+    font-size: 0.6em;
     letter-spacing:2px;
     vertical-align: super;
 }
@@ -245,3 +245,69 @@ section{
     color: var(--color-intern-blue);
 }
 /* section - freasher Jobs */
+
+/* Responsive */
+@media screen and (max-width:550px) {
+    body {
+        font-size: 8px;
+    }
+    .container{
+        margin: 0 10px!important;
+    }
+    nav a,nav #nav-login {
+        display: none!important;
+    }
+    #nav-register{
+      font-size: 1.2em;
+    }
+    #logo img{
+        width: 80%;
+    }
+    .search-bar{
+        width: 40%;
+        margin: 10px auto;
+    }
+    .sec-header,
+    .sec-info >span{
+        margin:0 auto!important;
+        text-align: center;
+    }
+    .sec-info a{
+        display:none;
+    }
+    .sec-data{
+        overflow-x: auto;
+        overflow-y: visible;
+        display: flex;
+    flex-direction: row;
+    }
+
+    #fresher-jobs {
+        margin-top: 5em !important;
+    }
+    #internsahala-trainings 
+    .sec-data{
+        flex-wrap: wrap;
+    }
+    #fresher-jobs .sec-data{
+        flex-direction: column;
+        gap:2px;
+    }
+    .footer-link-list{
+        display: none;
+    }
+    .footer-link-list:nth-last-child(1){
+        display: block;
+    }
+    #footer-about{
+        flex-direction: column;
+    }
+    #social-links{
+        flex-direction: column;
+    }
+    #appstore{
+        width: 100%;
+    }
+
+
+}
