@@ -258,6 +258,9 @@ section{
     nav a,nav #nav-login {
         display: none!important;
     }
+    section>div {
+        margin-top: 5em!important;
+    }
     #nav-register{
       font-size: 1.2em;
     }
