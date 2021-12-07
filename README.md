@@ -1,3 +1,3 @@
 # internshala-clone
 
-[go Live][https://surjkhanal.github.io/internshala-clone]
+[go Live][https://tosudh.github.io/internshala-clone]
